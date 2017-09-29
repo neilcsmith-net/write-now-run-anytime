@@ -14,15 +14,31 @@
 
     <style>
       body {
-          background-color: #111;
+        background-color: #111;
       }
       footer {
-          position: absolute;
-          bottom: 5px;
-          left: 5px;
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+        z-index: 100;
+      }
+      .reveal section img {
+        background: none;
+        border: none;
+        box-shadow: none;
+      }
+      .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+        font-weight: normal;
+        text-transform: none;
+      }
+      .reveal pre {
+        width: auto;
+      }
+      .reveal {
+        font-size: 38px;
       }
     </style>
-    
+
     <!-- Printing and PDF exports -->
     <script>
       var link = document.createElement('link');
@@ -33,15 +49,199 @@
     </script>
   </head>
   <body>
-   
+
     <div class="reveal">
       <div class="slides">
-        <section>Slide 1</section>
-        <section>Slide 2</section>
+        <section>
+          <h2>Write <em>Now</em>, Run Anytime</h2>
+        </section>
+
+        <section>
+          <section>
+            <h2>Neil C Smith</h2>
+            <p>Artist &amp; Technologist</p>
+            <p>Oxford, UK</p>
+          </section>
+          <section>
+            <p>Worked for 10yrs in web consultancy for culture, education and third-sector</p>
+            <p>Also over 15yrs in creative applications of Java</p>
+          </section>
+          <section>
+            <p>Now, freelancer in open-source Java technologies</p>
+            <ul>
+              <li>Praxis LIVE - hybrid visual IDE for live creative coding</li>
+              <li>GStreamer 1.x bindings</li>
+              <li>JAudioLibs - audio utilities (inc. JNAJack)</li>
+              <li>Apache NetBeans / NetBeans Dream Team</li>
+            </ul>
+          </section>
+          <section>
+            <p>Audio-visual performances</p>
+            <p>Generative / interactive spaces and projections</p>
+          </section>
+          <section data-background-image="assets/sound-pool3.jpg" data-background-transition="zoom"></section>
+          <section data-background-image="assets/justitia.jpg" data-background-transition="zoom"></section>
+          <section data-background-image="assets/meeting-pt-1.jpg" data-background-transition="zoom"></section>
+          <section data-background-image="assets/meeting-pt-2.jpg" data-background-size="contain" data-background-transition="zoom"></section>
+          <section data-background-image="assets/meeting-pt-3.jpg" data-background-transition="zoom"></section>
+          <section data-background-image="assets/meeting-pt-4.jpg" data-background-transition="zoom"></section>
+          <section data-background-image="assets/meeting-pt-5.jpg" data-background-transition="zoom"></section>
+          <section data-background-image="assets/col.jpg" data-background-transition="zoom"></section>
+          <section data-background-image="assets/amen.jpg" data-background-transition="zoom"></section>
+        </section>
+
+
+        <section>
+          <section>
+            <h2>Live Coding</h2>
+          </section>
+          <section>
+            <p><em>Live coding is a performing arts form and a creativity technique centred upon the writing of source code
+                and the use of interactive programming in an improvised way. Live coding is often used to create sound 
+                and image based digital media, as well as light systems, improvised dance and poetry.</em>(Wikipedia)</p>
+          </section>
+          <section>
+            <p>Blurring of boundaries and sharing of ideas between the creative arts and computer science.</p>
+          </section>
+          <section>
+            <h2>International Conference on<br>Live Coding</h2>
+            <ul>
+              <li>Leeds, UK (2015)</li>
+              <li>Hamilton, Ontario, Canada (2016)</li>
+              <li>Morelia, Mexico (2017)</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Algoraves</h2>
+            <img class="stretch" src="assets/algorave.jpg" />
+            <p>Algobabez, bluedot festival, 2016</p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Live Coding Tools</h2>
+          </section>
+          <section>
+            <h2>Sonic Pi</h2>
+            <img class="stretch" src="assets/sonicpi2.jpg" />
+            <p>Sam Aaron</p>
+          </section>
+          <section>
+            <h2>TidalCycles</h2>
+            <img class="stretch" src="assets/tidalcycles.png" />
+            <p>Alex McLean</p>
+          </section>
+          <section>
+            <h2>Extempore</h2>
+            <img class="stretch" src="assets/extempore.jpg" />
+            <p>Andrew Sorensen</p>
+          </section>
+          <section><h2>Many more ...</h2>
+            <p>afterglow, Alsa, ChucK, Conductive, Cyril, Fluxus, FoxDot, Gibber,
+              ixi lang, i-score, LiveCodeLab, Max, Moonlet, Overtone, Pure Data, re&lt;urse,
+              serialist, <b>SuperCollider</b>, synth-x, Vivid, Vuo, vvvv, Wulfcode, xi</p></section>
+          <section>
+            <h2>Live coding</h2>
+            <p>Not to be confused with Interactive programming</p>
+            <h2>Interactive programming</h2>
+            <p>Not to be confused with Live coding</p>
+          </section>
+          <section>
+            <h2>Pharo</h2>
+            <img class="stretch" src="assets/pharo.png" />
+          </section>
+          <section>
+            <h2>Pharo</h2>
+            <img class="stretch" src="assets/pharo2.jpg" />
+          </section>
+          <section>
+            <p>#MakeJavaMoreSmalltalk</p>
+          </section>
+          <section>
+            <h2>Praxis LIVE</h2>
+            <img class="stretch" src="assets/PL300.png" />
+          </section>
+        </section>
+
+        <section>
+          <h2>Demo Time</h2>
+          <p><code>Alt-TAB now!</code></p>
+        </section>
+
+        <section>
+          <h2>The Technical Stuff</h2>
+          <p><code>Thread.sleep(5 * 60 * 1000);</code></p>
+        </section>
+
+        <section>
+          <section>
+            <h2>Forest of Actors architecture</h2>
+          </section>
+          <section>
+            <img class="stretch" src="assets/graph1.png" />
+          </section>
+          <section>
+            <img class="stretch" src="assets/graph2.png" />
+          </section>
+          <section>
+            <img class="stretch" src="assets/graph3.png" />
+          </section>
+          <section>
+            <img class="stretch" src="assets/graph4.png" />
+          </section>
+          <section>
+            <img class="stretch" src="assets/distributed-hubs.jpg" />
+          </section>
+        </section>
+        
+        <section>
+          <section>
+            <h2>Got code now what?</h2>
+          </section>
+          <section>
+            <h2>Compiler as a Service</h2>
+            <ul>
+              <li>javac library</li>
+              <li>Components accept code as String</li>
+              <li>Class body evaluator</li>
+              <li>Source and bytecode "files" in memory</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Classloader per code iteration</h2>
+            <p>Not HotSwap, JShell, etc.</p>
+            <p>Ensure the user's code represents a replicable state</p>
+          </section>
+          <section>
+            <h2>Java Object</h2>
+            <p>Behaviour | State | Identity</p>
+          </section>
+          <section>
+            <img src="assets/code-objects.png" />
+          </section>
+          <section>
+            <h2>Abandoning our Object-oriented roots?</h2>
+            <q>"I’m sorry that I long ago coined the term “objects” for this
+              topic because it gets many people to focus on the lesser idea.
+              The big idea is “messaging” – that is what the kernel of Smalltalk/Squeak is all about</q>
+            <p>Alan Kay</p>
+          </section>
+        </section>
+        
+        <section>
+          <h2>AMEN $ Mother Function</h2>
+        </section>
+
+        <section>
+          <h2>Thank you!</h2>
+          <p>www.praxislive.org</p>
+          <p>https://github.com/praxis-live/</p>
+        </section>
       </div>
     </div>
 
-     <footer>
+    <footer>
       <a href="http://www.praxislive.org"><img src="assets/praxislive.png" /></a>
     </footer>
 
@@ -52,16 +252,16 @@
     <script>
       // More info https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
-          history: true,
-          // More info https://github.com/hakimel/reveal.js#dependencies
-          dependencies: [
-              {src: 'plugin/markdown/marked.js'},
-              {src: 'plugin/markdown/markdown.js'},
-              {src: 'plugin/notes/notes.js', async: true},
-              {src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+        history: true,
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          {src: 'plugin/markdown/marked.js'},
+          {src: 'plugin/markdown/markdown.js'},
+          {src: 'plugin/notes/notes.js', async: true},
+          {src: 'plugin/highlight/highlight.js', async: true, callback: function () {
               hljs.initHighlightingOnLoad();
             }}
-          ]
+        ]
       });
     </script>
   </body>
