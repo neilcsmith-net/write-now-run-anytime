@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Praxis LIVE</title>
+    <title>PraxisLIVE</title>
 
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/black.css">
@@ -14,28 +14,28 @@
 
     <style>
       body {
-        background-color: #111;
+          background-color: #111;
       }
       footer {
-        position: absolute;
-        bottom: 5px;
-        left: 5px;
-        z-index: 100;
+          position: absolute;
+          bottom: 5px;
+          left: 5px;
+          z-index: 100;
       }
       .reveal section img {
-        background: none;
-        border: none;
-        box-shadow: none;
+          background: none;
+          border: none;
+          box-shadow: none;
       }
       .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
-        font-weight: normal;
-        text-transform: none;
+          font-weight: normal;
+          text-transform: none;
       }
       .reveal pre {
-        width: auto;
+          width: auto;
       }
       .reveal {
-        font-size: 38px;
+          font-size: 38px;
       }
     </style>
 
@@ -88,6 +88,7 @@
           <section data-background-image="assets/meeting-pt-5.jpg" data-background-transition="zoom"></section>
           <section data-background-image="assets/col.jpg" data-background-transition="zoom"></section>
           <section data-background-image="assets/amen.jpg" data-background-transition="zoom"></section>
+          <section data-background-image="assets/JDD.jpg" data-background-transition="zoom"></section>
         </section>
 
         <section>
@@ -115,6 +116,9 @@
             <h2>Algoraves</h2>
             <img class="stretch" src="assets/algorave.jpg" />
             <p>Algobabez, bluedot festival, 2016</p>
+          </section>
+          <section>
+            <p>Coming soon to a city near you!</p>
           </section>
         </section>
 
@@ -178,7 +182,47 @@
         </section>
 
         <section>
-          <h2>The Technical Stuff</h2>
+          <section>
+            <h2>PraxisLIVE</h2>
+            <p>hybrid visual IDE for (live) creative coding</p>
+          </section>
+          <section>
+            <p>easily create projections, interactive spaces, custom VJ tools, sonic instruments, creative IoT</p>
+            <p>use it as a live digital sketchbook, test out ideas, experiment with code</p>
+          </section>
+          <section>
+            <h2>History</h2>
+            <div class="fragment">
+              <h3>PraxisLIVE v1 (2011)</h3>
+              <p>Custom OpenGL pipeline, GStreamer 0.10, limited coding components</p>
+            </div>
+            <div class="fragment">
+              <h3>PraxisLIVE v2 (2015)</h3>
+              <p>Major rewrite, Processing included,<br>
+                <em>Fork All</em> - custom component coding and real editor</p>
+            </div>
+          </section>
+          <section>
+            <div>
+              <h3>PraxisLIVE v3 (2017)</h3>
+              <p>Java 8, Processing 3, GStreamer 1.x, Syphon/Spout, Pi support, third-party libs</p>
+            </div>
+            <div class="fragment">
+              <h3>PraxisLIVE v4 (2018)</h3>
+              <p>PraxisCORE LGPL, recode anything, custom data handling, <em>bezier connections!</em></p>
+            </div>
+          </section>
+          <section>
+            <p>hybrid visual IDE <em>and runtime</em> for (live) creative coding</p>
+          </section>
+          <section>
+            <p>PraxisCORE brings aspects of Erlang, Smalltalk and Extempore into the Java world ... </p>
+            <p>a powerful platform for media processing, data visualisation, sensors, robotics, IoT, and lots more! </p>
+          </section>
+        </section>
+
+        <section>
+          <h2>Let's get technical</h2>
           <p><code>Thread.sleep(5 * 60 * 1000);</code></p>
         </section>
 
@@ -191,10 +235,10 @@
             <h2>User code as a first class citizen</h2>
             <p class="fragment">Turtles all the way down</p>
             <p class="fragment">No scripting components, complex plugin API, etc.</p>
-            <p class="fragment">Code down to the sample</p>
+            <p class="fragment">Code down to the data (sample, pixel)</p>
           </section>
         </section>
-        
+
         <section>
           <section>
             <h2>Forest of Actors architecture</h2>
@@ -222,17 +266,16 @@
           </section>
           <section>
             <h2>Compiler as a Service</h2>
-            <ul>
-              <li>javac library</li>
-              <li class="fragment">Components accept code as String</li>
-              <li class="fragment">Class body evaluator</li>
-              <li class="fragment">Source and bytecode "files" in memory</li>
-            </ul>
+            <p>javac as a library</p>
+            <p class="fragment">Components accept code as String</p>
+            <p class="fragment">Class body evaluator</p>
+            <p class="fragment">Source and bytecode "files" in memory</p>
           </section>
           <section>
             <h2>Classloader per code iteration</h2>
             <p>Not HotSwap, JShell, etc.</p>
-            <p>Ensure the user's code represents a replicable state</p>
+            <p class="fragment">Ensure the user's code represents a replicable state</p>
+            <p class="fragment">Code swap in real-time <em>at the right time</em></p>
           </section>
           <section>
             <h2>Java Object</h2>
@@ -275,16 +318,16 @@
     <script>
       // More info https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
-        history: true,
-        // More info https://github.com/hakimel/reveal.js#dependencies
-        dependencies: [
-          {src: 'plugin/markdown/marked.js'},
-          {src: 'plugin/markdown/markdown.js'},
-          {src: 'plugin/notes/notes.js', async: true},
-          {src: 'plugin/highlight/highlight.js', async: true, callback: function () {
-              hljs.initHighlightingOnLoad();
-            }}
-        ]
+          history: true,
+          // More info https://github.com/hakimel/reveal.js#dependencies
+          dependencies: [
+              {src: 'plugin/markdown/marked.js'},
+              {src: 'plugin/markdown/markdown.js'},
+              {src: 'plugin/notes/notes.js', async: true},
+              {src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                      hljs.initHighlightingOnLoad();
+                  }}
+          ]
       });
     </script>
   </body>
